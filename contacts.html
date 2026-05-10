@@ -23,17 +23,28 @@
 
     <form action="submit_form.php" method="post">
 
-        <input type="text" placeholder="Enter your name" required><br><br>  
-        <input type="email" placeholder="Enter your email" required><br><br>
-        <input type="number" placeholder="Enter your number" required><br><br>
-        <input type="password" placeholder="Enter your password" required><br><br>
-        <input type="date" required><br><br>
-        <input type="time" required><br><br>
-        <input type="color" placeholder="Choose a color" required><br><br>
-        <input type="range" min="0" max="100" required><br><br>
-        <input type="website" placeholder="Enter your website" required><br><br>
-        <input type="search" placeholder="Search..." required><br><br>
-        <input type="file" placeholder="Choose a file" accept="pdf" multiple required><br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="fullName" placeholder="Enter your name" required><br><br>  
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required><br><br>
+        <label for="number">Phone Number:</label>
+        <input type="number" id="number" placeholder="Enter your number" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required><br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" required><br><br>
+        <label for="time">Time:</label>
+        <input type="time" id="time" required><br><br>
+        <label for="color">Color:</label>
+        <input type="color" id="color" placeholder="Choose a color" required><br><br>
+        <label for="range">Range:</label>
+        <input type="range" id="range" min="0" max="100" required><br><br>
+        <label for="website">Website:</label>
+        <input type="website" id="website" placeholder="Enter your website" required><br><br>
+        <label for="search">Search:</label>
+        <input type="search" id="search" placeholder="Search..." required><br><br>
+        <label for="file">File:</label>
+        <input type="file" id="file" placeholder="Choose a file" accept="pdf" multiple required><br><br>
 
         <input type="radio" name="ratings" value="1" required> 1
         <input type="radio" name="ratings" value="2" required> 2
@@ -41,8 +52,8 @@
         <input type="radio" name="ratings" value="4" required> 4
         <input type="radio" name="ratings" value="5" required> 5<br><br>
 
-        <input type="checkbox" name="bbit" required> Subscribe to our newsletter<br><br>
-        <input type="checkbox" name="ics" required> Subscribe to our newsletter<br><br>
+        <input type="checkbox" name="bbit" required> <label for="subscribe_bbit">Subscribe to bbit newsletter</label><br><br>
+        <input type="checkbox" name="ics" required> <label for="subscribe_ics">Subscribe to ics newsletter</label><br><br>
 
         <select name="country" required>
             <option value="">Select your country</option>
